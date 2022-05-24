@@ -1,0 +1,17 @@
+<configs>
+<!-- MeltTimePerUnit -->
+<!-- lowered the value from .25,[.5],[.4] to .2 -->
+<set xpath="/items/item/property[@name='MeltTimePerUnit']/@value">.2</set>
+
+<!-- CraftingIngredientTime -->
+<!-- lowered the value from .05],[.5],[.25],[0.5],[2],[3],[5],[8],[9],[10],[15],[20],[30],[60],[95] to .2 -->
+<set xpath="/items/item/property[@name='CraftingIngredientTime']/@value">.2</set>
+
+<!-- Advanced Bellows increase smelting speed by 50% -->
+<!-- lowered the value from -.333 to -.90 -->
+<set xpath="/items/item[@name='toolBellows']/effect_group/passive_effect[@name='CraftingSmeltTime']/@value">-.90</set>
+
+<!-- Anvil increase crafting speed by 50%. -->
+<!-- lowered the value from -.333 to -1 -->
+<set xpath="/items/item[@name='toolAnvil']/effect_group/passive_effect[@name='CraftingTime']/@value">-1</set>
+</configs>
